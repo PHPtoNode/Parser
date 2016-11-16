@@ -8,7 +8,8 @@ import java.io.InputStream;
 public class Interpreter {
 
     public static void main(String [] args) throws Exception{
-        InputStream originalInput = System.in;
+        System.out.println("llega");
+        /*InputStream originalInput = System.in;
         System.setIn(new FileInputStream(new File("input.txt")));
         CaseInsensitiveInputStream input = new CaseInsensitiveInputStream(System.in);
         PHPLexer lexer = new PHPLexer(input);
@@ -17,6 +18,6 @@ public class Interpreter {
         ParseTree tree = parser.htmlDocument();
         System.setIn(originalInput);
         MyVisitor<Object> loader = new MyVisitor<Object>();
-        loader.visit(tree);
+        loader.visit(tree);*/
     }
 }
